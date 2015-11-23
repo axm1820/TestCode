@@ -13,11 +13,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.*;
 import java.util.List;
+import java.util.HashMap;
 
 public class CurbSidePageObject{
 	 public WebDriver driver;
 	 
-	 public void CurbsidePageObject(WebDriver driver) {
+	 public void CurbsidePageObjject(WebDriver driver) {
 		//this.driver=driver;
 	 }
 	 
@@ -36,19 +37,22 @@ public class CurbSidePageObject{
 	  }
 	  
 	 @Test
-	 public void getJobs() { 
+	 public HashMap<String,String> getJobs() { 
 		 //Getting all the locations
 		 WebElement locelements=driver.findElement(By.id("locationsFilter"));
 		   String [] locations=locelements.getText().split("\n");
 		    //Checking jobs in every location  
+		   HashMap<String,String> hash=new HashMap<String,String>();
 		   for (int i=1;i<locations.length;i++) {
 		    	 driver.findElement(By.xpath("//select/option[@value="+"'"+locations[i]+"'"+"]")).click() ;
 		    	 //No of jobs
 		    	 List<WebElement> elements=driver.findElements(By.className("name"));
 		    	 //Printing jobs in each location  
 		    	 System.out.println("Location "+locations[i]+ ":Jobs "+elements.size());
+		    	 hash.put(locations[i], Integer.toString(elements.size()));
 		         driver.findElement(By.xpath("//select/option[@value='']")).click() ;
 		      }
+		   return hash;
 		  }
 	
 	 @AfterTest

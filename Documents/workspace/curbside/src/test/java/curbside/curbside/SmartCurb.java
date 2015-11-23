@@ -26,7 +26,8 @@ public class SmartCurb {
 	   //Test for comparing jobs in curbside 
 	   @Test
 	  public void smartrecruiters() {
-			 
+			 CurbSidePageObject curb = new CurbSidePageObject(); 
+		     HashMap<String,String> hash = curb.getJobs();
 			 WebDriver driver =  new FirefoxDriver();
 			 String url = "https://careers.smartrecruiters.com/Curbside1/";
 		     
@@ -36,7 +37,14 @@ public class SmartCurb {
 		     //to get the jobs in locations
 			 List <WebElement> jobs=driver.findElements(By.xpath("//*[@class='title']"));
 			 for(int i=0; i< locations.size(); i++) {
-			     System.out.println(locations.get(i).getText()+ "  "+jobs.get(i).getText());
+				 if (hash.containsKey(locations.get(i).getText())) {
+			        
+					 System.out.println("SmartRecruiter "+locations.get(i).getText()+ "  "+jobs.get(i).getText());
+					 System.out.println("Curbside "+locations.get(i).getText()+ hash.get(locations.get(i).getText()));
+				}
 		 }
+			 
+			 
+			 
      }
 }

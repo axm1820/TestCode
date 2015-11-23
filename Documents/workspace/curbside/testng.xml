@@ -5,7 +5,6 @@
     <classes>
       <class name="curbside.curbside.CurbSidePageObject">
         <methods>
-           <include name="setup"/>
            <include name="getJobs"/>
            <include name="closebrowser"/>
         </methods>

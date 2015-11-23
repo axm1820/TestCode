@@ -2,26 +2,26 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="CurbsidePageObj" duration-ms="219567" started-at="2015-11-23T01:40:20Z" finished-at="2015-11-23T01:44:00Z">
+  <suite name="CurbsidePageObj" duration-ms="96488" started-at="2015-11-23T07:27:34Z" finished-at="2015-11-23T07:29:11Z">
     <groups>
     </groups>
-    <test name="Default test(failed)" duration-ms="219567" started-at="2015-11-23T01:40:20Z" finished-at="2015-11-23T01:44:00Z">
+    <test name="Default test(failed)" duration-ms="96488" started-at="2015-11-23T07:27:34Z" finished-at="2015-11-23T07:29:11Z">
       <class name="curbside.curbside.SmartCurb">
-        <test-method status="PASS" signature="setup()[pri:0, instance:curbside.curbside.SmartCurb@415dd2f9]" name="setup" duration-ms="12933" started-at="2015-11-22T17:43:47Z" finished-at="2015-11-22T17:44:00Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:curbside.curbside.SmartCurb@51504155]" name="setup" duration-ms="32327" started-at="2015-11-22T23:28:38Z" finished-at="2015-11-22T23:29:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
       </class> <!-- curbside.curbside.SmartCurb -->
       <class name="curbside.curbside.CurbSidePageObject">
-        <test-method status="PASS" signature="setup()[pri:0, instance:curbside.curbside.CurbSidePageObject@38f3cab6]" name="setup" is-config="true" duration-ms="2919" started-at="2015-11-22T17:40:20Z" finished-at="2015-11-22T17:40:23Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:curbside.curbside.CurbSidePageObject@6e4ccfdc]" name="setup" is-config="true" duration-ms="3041" started-at="2015-11-22T23:27:34Z" finished-at="2015-11-22T23:27:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getJobs()[pri:0, instance:curbside.curbside.CurbSidePageObject@38f3cab6]" name="getJobs" duration-ms="203688" started-at="2015-11-22T17:40:23Z" finished-at="2015-11-22T17:43:47Z">
+        <test-method status="PASS" signature="getJobs()[pri:0, instance:curbside.curbside.CurbSidePageObject@6e4ccfdc]" name="getJobs" duration-ms="61097" started-at="2015-11-22T23:27:37Z" finished-at="2015-11-22T23:28:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getJobs -->
-        <test-method status="FAIL" signature="TearDown()[pri:0, instance:curbside.curbside.CurbSidePageObject@38f3cab6]" name="TearDown" is-config="true" duration-ms="0" started-at="2015-11-22T17:43:47Z" finished-at="2015-11-22T17:43:47Z">
+        <test-method status="FAIL" signature="TearDown()[pri:0, instance:curbside.curbside.CurbSidePageObject@6e4ccfdc]" name="TearDown" is-config="true" duration-ms="0" started-at="2015-11-22T23:28:38Z" finished-at="2015-11-22T23:28:38Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
