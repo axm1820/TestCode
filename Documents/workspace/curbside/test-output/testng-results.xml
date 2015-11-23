@@ -1,17 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17537" started-at="2015-11-22T21:34:38Z" finished-at="2015-11-22T21:34:55Z">
+  <suite name="CurbsidePageObj" duration-ms="219567" started-at="2015-11-23T01:40:20Z" finished-at="2015-11-23T01:44:00Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="17537" started-at="2015-11-22T21:34:38Z" finished-at="2015-11-22T21:34:55Z">
+    <test name="Default test(failed)" duration-ms="219567" started-at="2015-11-23T01:40:20Z" finished-at="2015-11-23T01:44:00Z">
       <class name="curbside.curbside.SmartCurb">
-        <test-method status="PASS" signature="setup()[pri:0, instance:curbside.curbside.SmartCurb@7f387985]" name="setup" duration-ms="17452" started-at="2015-11-22T13:34:38Z" finished-at="2015-11-22T13:34:55Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:curbside.curbside.SmartCurb@415dd2f9]" name="setup" duration-ms="12933" started-at="2015-11-22T17:43:47Z" finished-at="2015-11-22T17:44:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
       </class> <!-- curbside.curbside.SmartCurb -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="curbside.curbside.CurbSidePageObject">
+        <test-method status="PASS" signature="setup()[pri:0, instance:curbside.curbside.CurbSidePageObject@38f3cab6]" name="setup" is-config="true" duration-ms="2919" started-at="2015-11-22T17:40:20Z" finished-at="2015-11-22T17:40:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="getJobs()[pri:0, instance:curbside.curbside.CurbSidePageObject@38f3cab6]" name="getJobs" duration-ms="203688" started-at="2015-11-22T17:40:23Z" finished-at="2015-11-22T17:43:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getJobs -->
+        <test-method status="FAIL" signature="TearDown()[pri:0, instance:curbside.curbside.CurbSidePageObject@38f3cab6]" name="TearDown" is-config="true" duration-ms="0" started-at="2015-11-22T17:43:47Z" finished-at="2015-11-22T17:43:47Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at curbside.curbside.CurbSidePageObject.TearDown(CurbSidePageObject.java:69)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:708)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:821)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:773)
+	at org.testng.TestRunner.run(TestRunner.java:623)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
+	at org.testng.TestNG.run(TestNG.java:1018)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- curbside.curbside.CurbSidePageObject -->
+    </test> <!-- Default test(failed) -->
+  </suite> <!-- CurbsidePageObj -->
 </testng-results>

@@ -23,7 +23,7 @@ public class SmartCurb {
 	    public void SmartCurb() {
 	    	//Do Nothing
 	    }
-	
+	   //Test for comparing jobs in curbside 
 	   @Test
 	  public void smartrecruiters() {
 			 

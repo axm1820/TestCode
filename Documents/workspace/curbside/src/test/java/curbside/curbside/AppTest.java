@@ -32,14 +32,8 @@ public class AppTest extends TestCase
      */
     public void testApp()
     {
-        System.out.println("hello");
-        
-        CurbSidePageObject obj= new CurbSidePageObject();
-        SmartCurb smc = new SmartCurb();
-        obj.setup();
-       // obj.getJobs();
-        smc.setup();
-       //obj.TearDown();
-        assertTrue( true );
+       
+      assertTrue( true );
+    
     }
 }
